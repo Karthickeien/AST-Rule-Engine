@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1><i>Rule Engine with AST</i></h1>
+        
+        <!-- Rule Creation Section -->
+        <div class="form-section">
+            <h2>Create Rule</h2>
+            <form id="ruleForm">
+                <div class="input-field">
+                    <input type="text" id="ruleName" required>
+                    <label>Rule Name</label>
+                </div>
+                
+                <div class="input-field">
+                    <textarea id="ruleString" required></textarea>
+                    <label>Rule Expression</label>
+                </div>
+                <p class="hint">Example: age > 30 AND department = 'Sales' AND salary >= 50000</p>
+                
+                <button type="submit">Create Rule</button>
+            </form>
+        </div>
+
+        <!-- Rules List Section -->
+        <div class="form-section">
+            <h2>Existing Rules</h2>
+            <div id="rulesList" class="rules-list">
+                <!-- Rules will be populated here -->
+            </div>
+        </div>
+
+        <!-- Rule Evaluation Section -->
+        <div class="form-section">
+            <h2>Evaluate Rule</h2>
+            <form id="evaluationForm">
+                <div class="input-field">
+                    <select id="ruleSelect" required>
+                        <option value="">Select a rule...</option>
+                    </select>
+                    <label>Select Rule</label>
+                </div>
+
+                <div class="input-grid">
+                    <div class="input-field">
+                        <input type="number" id="age" required>
+                        <label>Age</label>
+                    </div>
+                    
+                    <div class="input-field">
+                        <select id="department" required>
+                            <option value="Sales">Sales</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Engineering">Engineering</option>
+                        </select>
+                        <label>Department</label>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="number" id="salary" required>
+                        <label>Salary</label>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="number" id="experience" required>
+                        <label>Experience (years)</label>
+                    </div>
+                </div>
+                
+                <button type="submit">Evaluate Rule</button>
+            </form>
+
+            <div id="evaluationResult" class="evaluation-result hidden">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+
+        <!-- Evaluation History Section -->
+        <div class="form-section">
+            <h2>Evaluation History</h2>
+            <div id="evaluationHistory" class="history-list">
+                <!-- History will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
