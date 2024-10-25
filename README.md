@@ -156,22 +156,22 @@ npm test
 ## 📸 Screenshots
 
 ### Rule Creation Interface
-![Rule Creation Interface](/Images/Create%Rule%with&AST.png)
+![Rule Creation Interface](Images/Create%20Rule%20with%20AST.png)
 *Create complex rules using an intuitive interface with real-time validation*
 
-### Rule Evaluation Dashboard
-![Rule Evaluation Dashboard](./Images/Evaluate%Rule%with%AST.png)
-*Evaluate rules against user data with immediate feedback*
-
 ### Rule Management Console
-![Rule Management](./Images/Existing%Rule%with%AST.png)
+![Rule Management](Images/Existing%20Rule%20with%20AST.png)
 *Manage, edit, and organize your business rules efficiently*
 
+### Rule Evaluation Dashboard
+![Rule Evaluation Dashboard](Images/Evaluate%20Rule%20with%20AST.png)
+*Evaluate rules against user data with immediate feedback*
+
 ### Evaluation History
-![Evaluation History](./Images/Evaluation%History%with%AST.png)
+![Evaluation History](./Images/Evaluation%20History%20with%20AST.png)
 *Track and analyze rule evaluation history with detailed insights*
 
-Key test scenarios:
+## 📄Key test scenarios:
 - Individual rule creation and AST validation
 - Rule combination logic
 - Rule evaluation with various data inputs
